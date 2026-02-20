@@ -9,7 +9,7 @@ titles=[]
 urlss=[]
 
 #NO. of pages we want to scrape.
-pages_to_scrape=3
+pages_to_scrape=2
 
 #Loop for getting the page urls upto n.
 for i in range(1,pages_to_scrape+1):
@@ -51,4 +51,5 @@ data={'Title': titles, 'Prices': prices, 'Stars':stars, "URLs":urlss}
 #print(data)
 df=pd.DataFrame(data=data)
 df.index+=1
-df.to_csv("/Users/mohit/Desktop/bookstore/output2.csv")
+df
+#df.to_csv("/Users/mohit/Desktop/bookstore/output2.csv")
